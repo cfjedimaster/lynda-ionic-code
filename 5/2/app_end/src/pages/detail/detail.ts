@@ -13,15 +13,7 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class DetailPage {
 
-  public person = {
-    name:"",
-    id:""
-  }
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    let personId = navParams.data.person;
-    this.person.title = 'Something about '+personId;
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailPage');

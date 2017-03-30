@@ -20,7 +20,7 @@ export class DetailPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     let personId = navParams.data.person;
-    this.person.title = 'Something about '+personId;
+    this.person.name = 'Person '+personId;
   }
 
   ionViewDidLoad() {
